@@ -1,0 +1,46 @@
+package com.OrangeHRM;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Add_Employee 
+{
+
+	public static void main(String[] args)
+	{
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
+		WebDriver driver=null;
+        driver=new ChromeDriver();
+        String url="http://127.0.0.1/orangehrm-4.0/symfony/web/index.php/auth/login";
+        driver.get(url);
+        System.out.println("The url navigated to:"+driver.navigate());
+        
+        //<input name="txtUsername" id="txtUsername" type="text">
+        driver.findElement(By.id("txtUsername")).sendKeys("admin");
+        
+       //<input name="txtPassword" id="txtPassword" autocomplete="off" type="password">
+        driver.findElement(By.id("txtPassword")).sendKeys("admin123");
+        
+        //<input type="button" value="Login" name="openIdLogin" id="openIdLogin" disabled="disabled">
+        
+        //<input type="submit" name="Submit" class="button" id="btnLogin" value="LOGIN">
+        WebElement LogInButton= driver.findElement(By.id("btnLogin"));
+        
+        //<a href="#" id="welcome" class="panelTrigger activated-welcome">Welcome Admin</a>
+      
+        LogInButton.click();
+ 
+        
+       
+       //<a class="firstLevelMenu" id="menu_pim_viewPimModule" href="/orangehrm-4.0/symfony/web/index.php/pim/viewPimModule"><b>PIM</b></a>
+   
+       driver.findElement(By.id("menu_pim_viewPimModule")).click();
+       
+       
+       
+	}
+
+}

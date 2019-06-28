@@ -1,0 +1,10 @@
+package com.NewTours_Attribute;
+
+public class NewTours_Register_getAttribute {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

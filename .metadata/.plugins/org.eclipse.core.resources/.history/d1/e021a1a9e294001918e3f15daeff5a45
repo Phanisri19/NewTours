@@ -1,0 +1,31 @@
+package com.OrangeHRM;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class LogInTest 
+{
+
+@Given("^Open chrome browser and navigate to the OrangeHRM application$")
+public void Open_chrome_browser_and_navigate_to_the_OrangeHRM_application() 
+{
+    
+}
+
+@When("^User enters valid UserName and Password and click on LogIn Button$")
+public void User_enters_valid_UserName_and_Password_and_click_on_LogIn_Button() 
+{
+}    // Express the Regexp above with the code you wish you had
+    
+
+@Then("^User should be able to successfully LogIn and close the application$")
+public void User_should_be_able_to_successfully_LogIn_and_close_the_application() 
+{
+ 
+ 
+}
+
+
+}
+

@@ -1,0 +1,13 @@
+package com.Grid;
+
+public class NewTours_LogIn
+{
+
+	@Test
+	
+	public void logIn(String browser) 
+	{
+		
+	}
+	
+}

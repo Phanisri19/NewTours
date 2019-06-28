@@ -1,0 +1,15 @@
+package com.Facebook;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class LoginInTest
+{
+
+	public static void main(String[] args)
+	{
+		System.setProperty("webdriver.gecko.driver","./Driver/geckodriver.exe");
+		FirefoxDriver driver=new FirefoxDriver();
+		driver.navigate().to("http://facebook.com");
+	}
+
+}

@@ -1,0 +1,41 @@
+package com.Grid;
+
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.Test;
+
+
+
+public class NewTours_LogIn
+{
+  
+  @Test
+	public void login(String browser) 
+	{
+		
+		System.out.println("The Browser name is:"+browser);
+		
+		DesiredCapabilities cap=null;
+		
+		if(browser.equalsIgnoreCase("firefox"))
+		{
+			cap=DesiredCapabilities.firefox();
+			cap.setBrowserName("firefox");
+			cap.setPlatform(Platform.WINDOWS);
+		}
+		
+		else
+		{
+			if(browser.equalsIgnoreCase("chrome"))
+			{
+				cap=DesiredCapabilities.chrome();
+				cap.setBrowserName("chrome");
+				cap.setPlatform(Platform.WINDOWS);
+			}
+		}
+		
+		RemoteWebDriver driver=new RemoteWebDriver(new (URL("http://172.20.10.10:4444/wd/hub")),cap);
+	}
+	
+}

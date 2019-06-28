@@ -1,0 +1,26 @@
+package com.OrangeHRM;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Add_Employee
+{
+
+	public static void main(String[] args)
+	{
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
+		WebDriver driver=null;
+        driver=new ChromeDriver();
+        String url="http://127.0.0.1/orangehrm-4.0/symfony/web/index.php/dashboard";
+        driver.get(url);
+        System.out.println("The url navigated to:"+driver.navigate());
+        
+        String pim_Url="http://127.0.0.1/orangehrm-4.0/symfony/web/index.php/pim/viewEmployeeList";
+        driver.get(pim_Url);
+        
+        
+        	
+
+	}
+
+}

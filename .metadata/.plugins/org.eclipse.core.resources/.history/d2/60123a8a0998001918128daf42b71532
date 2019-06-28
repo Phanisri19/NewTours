@@ -1,0 +1,24 @@
+<suite>
+
+   <test name="On firefox">
+
+     <classes>
+
+       <class name="com.Grid.NewTours_LognIn"/>
+
+     </classes>
+
+   </test>
+
+   
+    <test name="On Chrome">
+
+       <classes>
+
+            <class name="com.Grid.NewTours_LogIn"/> 
+
+       </classes>
+
+    </test> 
+     
+</suite>

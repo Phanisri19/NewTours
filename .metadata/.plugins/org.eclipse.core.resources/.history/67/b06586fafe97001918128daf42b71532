@@ -1,0 +1,26 @@
+<suite name="NewTours Application">
+
+   <test name="On firefox">
+  
+     <classes>
+        
+        <class name="com.GRID.NewTours_LogIn"/>
+         
+     </classes>
+  
+    </test>
+    
+    
+    <test name="On chrome">
+    
+       <classes>
+       
+           <class name="com.GRID.NewTours_LogIn"></class>
+       
+       </classes>
+   
+   
+    </test>
+
+
+</suite>
